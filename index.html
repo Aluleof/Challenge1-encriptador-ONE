@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Logo linkedin -->
+    <script src="https://kit.fontawesome.com/a8ad4fc3d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <img class="logo" src="imagenes/logoalura.png">
+        </header>
+
+        <div class="container-content">
+            <section class="container-content-left">
+                <textarea type="text" class="input-text" cols=" 40" rows="6"
+                    placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="botones">
+                    <button class="btnE btn-style" type="button" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btnD btn-style" type="button" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="btnC btn-style" type="button" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </section>
+
+            <section class="container-content-right">
+                <div class="container-content-rigth-image">
+                    <img id="img-gato" class="img-gato" src="imagenes/gato.png">
+                </div>
+                <textarea type="text" class="input-text2" id="salida" cols="18" rows="8"></textarea>
+            </section>
+        </div>
+
+        <footer>
+            <p> &#169 Desarrollado por Aldana Lucia Leofanti</p>
+            <a href="https://www.linkedin.com/in/aldanalucialeofanti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </footer>
+    </main>
+
+    <div class="container-alerts-shadow">
+        <div class="container-alerts">
+            <p class="text-alert"> </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
